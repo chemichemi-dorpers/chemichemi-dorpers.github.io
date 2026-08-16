@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chemichemi D - Quality Dorper sheep for sale in Kenya.">
+  <meta name="description" content="Chemichemi Dorpers - Quality Dorper sheep for sale in Kenya.">
   <title>Chemichemi D | Quality Dorper Sheep</title>
 
   <style>
