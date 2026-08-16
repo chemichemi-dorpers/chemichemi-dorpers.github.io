@@ -114,6 +114,21 @@
       color: white;
     }
 
+    .btn.facebook {
+      background: #1877f2;
+      color: white;
+    }
+
+    .btn.whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    .btn.dark {
+      background: #102a16;
+      color: white;
+    }
+
     section {
       padding: 70px 6%;
     }
@@ -294,6 +309,34 @@
       margin: 15px 0;
     }
 
+    .social {
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .social-box {
+      max-width: 900px;
+      margin: auto;
+      padding: 35px 20px;
+      border-radius: 20px;
+      background: #f5f7f2;
+      box-shadow: 0 7px 25px rgba(0,0,0,.08);
+    }
+
+    .social-box h3 {
+      color: #205b28;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
     footer {
       background: #102a16;
       color: white;
@@ -327,6 +370,11 @@
       .details {
         grid-template-columns: 1fr;
       }
+
+      .social-buttons .btn {
+        width: 90%;
+        max-width: 300px;
+      }
     }
   </style>
 </head>
@@ -342,6 +390,7 @@
       <a href="#about">About</a>
       <a href="#sheep">Sheep</a>
       <a href="#gallery">Gallery</a>
+      <a href="#social">Social</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -349,6 +398,7 @@
 
 <section class="hero" id="home">
   <div class="hero-content">
+
     <h1>CHEMICHEMI DORPERS</h1>
 
     <p>
@@ -359,11 +409,20 @@
       Strong. Healthy. Beautiful. Ready for your farm.
     </p>
 
-    <a class="btn" href="#sheep">View Sheep</a>
+    <a class="btn" href="#sheep">🐑 View Sheep</a>
 
     <a class="btn green" href="tel:+254737856162">
       📞 Call +254 737 856 162
     </a>
+
+    <a
+      class="btn whatsapp"
+      href="https://wa.me/254737856162?text=Hello%20Chemichemi%20Dorpers%2C%20I%20am%20interested%20in%20your%20sheep."
+      target="_blank"
+    >
+      💬 WhatsApp Us
+    </a>
+
   </div>
 </section>
 
@@ -384,6 +443,7 @@
       </div>
 
       <div class="about-text">
+
         <h3>Quality Sheep for Farmers</h3>
 
         <p>
@@ -404,6 +464,7 @@
         <p>
           📍 Located in <strong>Nyahururu, Kenya</strong>.
         </p>
+
       </div>
 
     </div>
@@ -500,8 +561,9 @@
         </a>
 
         <a
-          class="btn"
+          class="btn whatsapp"
           href="https://wa.me/254737856162?text=Hello%20Chemichemi%20Dorpers%2C%20I%20am%20interested%20in%20the%20sheep%20for%20KES%205%2C500."
+          target="_blank"
         >
           💬 WhatsApp
         </a>
@@ -563,6 +625,72 @@
 
 </section>
 
+<!-- SOCIAL MEDIA SECTION -->
+<section class="social" id="social">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Connect With Chemichemi Dorpers</h2>
+      <p>Follow us, contact us and share our sheep with other farmers.</p>
+    </div>
+
+    <div class="social-box">
+
+      <h3>🐑 Let's Connect!</h3>
+
+      <p>
+        Want to buy a sheep, ask a question or follow our latest animals?
+        Get in touch with us today.
+      </p>
+
+      <div class="social-buttons">
+
+        <!-- FACEBOOK -->
+        <a
+          class="btn facebook"
+          href="https://www.facebook.com/profile.php?id=61576351253095"
+          target="_blank"
+          rel="noopener"
+        >
+          🔵 Facebook
+        </a>
+
+        <!-- WHATSAPP -->
+        <a
+          class="btn whatsapp"
+          href="https://wa.me/254737856162?text=Hello%20Chemichemi%20Dorpers%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20know%20more%20about%20your%20sheep."
+          target="_blank"
+          rel="noopener"
+        >
+          🟢 WhatsApp
+        </a>
+
+        <!-- PHONE -->
+        <a
+          class="btn green"
+          href="tel:+254737856162"
+        >
+          📞 Call Us
+        </a>
+
+        <!-- SHARE WEBSITE -->
+        <a
+          class="btn dark"
+          href="javascript:void(0)"
+          onclick="shareWebsite()"
+        >
+          📤 Share Website
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 <section class="contact" id="contact">
 
   <div class="container">
@@ -583,14 +711,26 @@
       </div>
 
       <a class="btn green" href="tel:+254737856162">
-        Call Now
+        📞 Call Now
       </a>
 
       <a
-        class="btn"
+        class="btn whatsapp"
         href="https://wa.me/254737856162"
+        target="_blank"
       >
-        WhatsApp Us
+        💬 WhatsApp Us
+      </a>
+
+      <br>
+
+      <a
+        class="btn facebook"
+        href="https://www.facebook.com/profile.php?id=61576351253095"
+        target="_blank"
+        rel="noopener"
+      >
+        🔵 Follow Us on Facebook
       </a>
 
     </div>
@@ -609,11 +749,33 @@
     Quality Dorper Sheep • Nyahururu, Kenya
   </p>
 
+  <p>
+    📞 +254 737 856 162
+  </p>
+
   <p class="small">
     © 2026 Chemichemi Dorpers. All rights reserved.
   </p>
 
 </footer>
+
+<script>
+  function shareWebsite() {
+
+    const shareData = {
+      title: "CHEMICHEMI DORPERS",
+      text: "Check out CHEMICHEMI DORPERS - Quality Dorper Sheep in Nyahururu, Kenya!",
+      url: window.location.href
+    };
+
+    if (navigator.share) {
+      navigator.share(shareData);
+    } else {
+      navigator.clipboard.writeText(window.location.href);
+      alert("Website link copied! You can now paste it on WhatsApp, Facebook or anywhere.");
+    }
+  }
+</script>
 
 </body>
 </html>
